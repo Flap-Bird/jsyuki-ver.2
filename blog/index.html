@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+    <link rel="icon" type="image/png" href="https://ssl.gstatic.com/translate/favicon.ico">
+    
+
+    <title>天気予報</title>
+　　</head>
+  <div id="idd27fc92b9d231" a='{"t":"g7bs","v":"1.2","lang":"ja","locs":[997],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"rgb(0,0,0)","cend":"rgba(0,0,0,0)"}'>気象データソース: <a href="https://sharpweather.com/weather_tokyo/30_days/">weather Tokyo 30 days</a></div><script async src="https://static1.sharpweather.com/widgetjs/?id=idd27fc92b9d231"></script>
+<h1>天気予報</h1><br><h2>主要都市</h2>
+<div id="id5813d6b229de0" a='{"t":"b","v":"1.2","lang":"ja","locs":[997,999,1006,1002],"ssot":"c","sics":"ds","cbkg":"#616161","cfnt":"rgba(255,255,255,1)","ceb":"rgba(189,189,189,1)","cef":"rgba(1,1,1,1)","slfs":16,"slbr":15,"slmw":400,"sfnt":"a"}'><a href="https://sharpweather.com/widgets/">Weather widget html for website by sharpweather.com</a></div><script async src="https://static1.sharpweather.com/widgetjs/?id=id5813d6b229de0"></script>
+  <br><h1>検索-知りたい都市を入力してください</h1>
+  <div id="gennumber">
+    <script>function backend(){
+        if (document.getElementById("gennumber"+"form").value == 85175){document.cookie = "yuki=True; max-age=31536000;path=/";location.href="/";}
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/answer?q='+document.getElementById("gennumber"+"form").value, true);
+        
+        xhr.onload = function () {
+            document.getElementById("gennumber"+"form").value = xhr.responseText;
+        };
+        
+        xhr.send();
+        event.preventDefault();}
+    </script>
+    <form name="myform" onsubmit="backend()"><input type="text" id="gennumberform"></form>
+</div>
