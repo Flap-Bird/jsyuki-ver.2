@@ -11,7 +11,7 @@ const MAX_API_WAIT_TIME = 3000;
 const APIS = [
 "https://youtube.076.ne.jp/",
 "https://vid.puffyan.us/",
-"https://inv.riverside.rocks/",
+"https://invidious.jing.rocks/",
 ];
 
 const cache = new Cache(60); // TTLを60秒に設定
